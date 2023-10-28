@@ -259,7 +259,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item list">
               <img
                 src="./images/img4.jpg"
                 width="264"
@@ -437,50 +437,138 @@
           </ul>
         </div>
       </section>
+
+      <div class="modal-overlay">
+        <div class="modal-window">
+          <p class="modal-window-title">
+            Leave your contacts and we will call you back
+          </p>
+
+          <form class="form">
+            <label>
+              Name
+              <div class="input-icon-item">
+                <svg class="modal-icon-item">
+                  <use
+                    href="./images/icons.svg#icon-person"
+                    width="18"
+                    height="18"
+                  ></use>
+                </svg>
+                <input class="form-input" type="text" name="name" required />
+              </div>
+            </label>
+            <label>
+              Phone
+              <div class="input-icon-item">
+                <svg class="modal-icon-item">
+                  <use
+                    href="./images/icons.svg#icon-phone"
+                    width="18"
+                    height="18"
+                  ></use>
+                </svg>
+                <input class="form-input" type="tel" name="phone" required />
+              </div>
+            </label>
+            <label>
+              Email
+              <div class="input-icon-item">
+                <svg class="modal-icon-item">
+                  <use
+                    href="./images/icons.svg#icon-email"
+                    width="18"
+                    height="18"
+                  ></use>
+                </svg>
+                <input class="form-input" type="email" name="email" required />
+              </div>
+            </label>
+            <label>
+              Comment
+              <textarea
+                class="form-input"
+                name="comment"
+                rows="9"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+
+            <label class="policy-checkbox-text">
+              <input type="checkbox" name="policy" value="policy" />
+              I accept the terms and conditions of the
+              <a class="privacy-policy-text" href="#">Privacy Policy</a>
+            </label>
+            <button class="modal-btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </main>
-
-    <footer class="page-footer">
-      <div class="footer-wrapper">
-        <div class="footer-content container">
-          <a class="page-footer-logo link logo" href="./index.html"
-            >Web<span class="logo-span">Studio</span></a
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-content">
+          <a class="footer-logo link" href="./index.html">
+            Web<span class="footer-logo-item">Studio</span></a
           >
-
-          <p class="footer-text content">
+          <p class="footer-description">
             Increase the flow of customers and sales for your business with
-            digital marketing &amp; growth solutions.
+            digital marketing & growth solutions.
           </p>
         </div>
 
-        <div class="footer-social-wrapper">
-          <p class="footer-social-title">Social media</p>
-          <ul class="footer-social-list">
-            <li class="social-item-footer list">
-              <a href="#" class="footer-socials-link link">
-                <svg class="footer-social-icon" width="24" height="24">
+        <div class="footer-socials">
+          <p class="footer-socials-title">Social media</p>
+          <ul class="footer-socials-list">
+            <li class="footer-socials-item list">
+              <a href="#" class="footer-socials-link link"
+                ><svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item-footer list">
-              <a href="#" class="footer-socials-link link">
-                <svg class="footer-social-icon" width="24" height="24">
+            <li class="footer-socials-item list">
+              <a href="#" class="footer-socials-link link"
+                ><svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item-footer list">
-              <a href="#" class="footer-socials-link link">
-                <svg class="footer-social-icon" width="24" height="24">
+            <li class="footer-socials-item list">
+              <a href="#" class="footer-socials-link link"
+                ><svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item-footer list">
-              <a href="#" class="footer-socials-link link">
-                <svg class="footer-social-icon" width="24" height="24">
+            <li class="footer-socials-item list">
+              <a href="#" class="footer-socials-link link"
+                ><svg class="footer-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-socials-title">Subscribe</p>
+          <ul class="footer-subscribe-list list">
+            <li class="list">
+              <input
+                class="footer-input-email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </li>
+            <li class="list">
+              <a href="#" class="subscribe-btn-link link"
+                >Subscribe
+                <buttom class="subscribe-btn" type="submit">
+                  <svg class="send-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </buttom>
               </a>
             </li>
           </ul>
