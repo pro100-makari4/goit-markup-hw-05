@@ -694,10 +694,10 @@ input::placeholder {
 .input-fild:hover,
 .input-fild:focus+.icon-svg,
 .input-fild:hover+.icon-svg,
-.input-comment:hover,
-.input-comment:hover,
 .textarea-container:focus,
-.textarea-container:hover {
+.textarea-container:hover,
+.input-comment:hover,
+.input-comment:hover {
     border-color: #4D5AE5;
     fill: #4D5AE5;
 }
@@ -730,7 +730,7 @@ input::placeholder {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox-text {
+.checkbox-text {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -746,7 +746,7 @@ input::placeholder {
     text-decoration-line: underline;
 }
 
-.input-checkbox-icon {
+.checkbox-icon {
     position: absolute;
     display: inline-flex;
     align-items: center;
@@ -763,7 +763,7 @@ input::placeholder {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox:checked+.input-checkbox-text>.input-checkbox-icon {
+.checkbox:checked+.checkbox-text>.checkbox-icon {
     background-color: #404bbf;
     fill: #f4f4fd;
     border: none;
