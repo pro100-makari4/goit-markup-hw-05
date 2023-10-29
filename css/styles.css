@@ -695,7 +695,9 @@ input::placeholder {
 .input-fild:focus+.icon-svg,
 .input-fild:hover+.icon-svg,
 .input-comment:hover,
-.input-comment:hover {
+.input-comment:hover,
+.textarea-container:focus,
+.textarea-container:hover {
     border-color: #4D5AE5;
     fill: #4D5AE5;
 }
@@ -746,6 +748,10 @@ input::placeholder {
 
 .input-checkbox-icon {
     position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -753,10 +759,6 @@ input::placeholder {
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -764,6 +766,7 @@ input::placeholder {
 .input-checkbox:checked+.input-checkbox-text>.input-checkbox-icon {
     background-color: #404bbf;
     fill: #f4f4fd;
+    border: none;
 }
 
 .form-submit-btn {
